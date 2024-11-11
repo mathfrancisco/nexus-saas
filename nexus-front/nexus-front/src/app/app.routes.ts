@@ -1,9 +1,13 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './pages/home/home.component';
+import { DashboardRoutes } from './features/dashboard/dashboard.routes';
+import { MarketingRoutes } from './features/marketing/marketing.routes';
+import { AnalyticsRoutes } from './features/analytics/analytics.routes';
 
-export const routes: Routes = [
+const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent)
+    component: HomeComponent,
   },
   {
     path: 'dashboard',
@@ -18,3 +22,5 @@ export const routes: Routes = [
     loadChildren: () => import('./features/analytics/analytics.routes').then(m => m.ANALYTICS_ROUTES)
   }
 ];
+
+export const APP_ROUTES = routes;
