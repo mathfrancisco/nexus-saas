@@ -3,10 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-analytics-home',
   standalone: true,
-  imports: [],
-  templateUrl: './analytics-home.component.html',
-  styleUrl: './analytics-home.component.scss'
+  template: `
+    <h1>Análise de Dados</h1>
+    <p>Aqui você visualizará relatórios e gráficos de análise.</p>
+  `,
 })
-export class AnalyticsHomeComponent {
-
-}
+export class AnalyticsHomeComponent {}
