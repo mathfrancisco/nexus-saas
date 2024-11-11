@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 1rem;
+
+  .navbar-brand {
+    .logo {
+      height: 2rem;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .nav-item {
+      margin-right: 1rem;
+
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+
+    .btn {
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn-login {
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+
+    .btn-start {
+      color: #1a1a1a;
+      background-color: #fff;
+    }
+  }
+}
